@@ -13,14 +13,23 @@ namespace ConsoleApp1
         {
             Duck mal = new MallardDuck();
             Duck red = new RedheadDuck();
+            Duck dec = new DecoyDuck();
+            Duck rub = new RubberDuck();
 
-            Duck[] duck = new Duck[] { mal, red };
+            List<Duck> ducks = new List<Duck> { mal, red, dec, rub };
 
-            for (int i = 0; i < duck.Length; i++)
+            for (int i = 0; i < ducks.Count; i++)
             {
-                Console.WriteLine(duck[i].Quack());
-                Console.WriteLine(duck[i].Swim());
-                Console.WriteLine(duck[i].DisPlay());
+                Console.WriteLine(ducks[i].Swim());
+                Console.WriteLine(ducks[i].Display());
+                if (ducks[i] is IFlyable)
+                {
+                    Console.WriteLine((ducks[i] as IFlyable).Fly());
+                }
+                if (ducks[i] is IQuackable)
+                {
+                    Console.WriteLine((ducks[i] as IQuackable).Quack());
+                }
             }
 
             Console.ReadKey();

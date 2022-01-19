@@ -8,9 +8,9 @@ namespace Library
 {
    public class DecoyDuck: Duck
     {
-        public override string DisPlay()
+        public override string Display()
         {
-            return "DisPlay" + " " + this.GetType();
+            return "Display" + " " + this.GetType();
         }
     }
 }

@@ -12,6 +12,6 @@ namespace Library
         {
             return "Swim" + " " + this.GetType();
         }
-        abstract public string DisPlay();
+        abstract public string Display();
     }
 }

@@ -8,9 +8,9 @@ namespace Library
 {
     public class MallardDuck : Duck, IFlyable, IQuackable
     {
-        public override string DisPlay()
+        public override string Display()
         {
-            return "DisPlay" + " " + this.GetType();
+            return "Display" + " " + this.GetType();
         }
         public string Quack()
         {
