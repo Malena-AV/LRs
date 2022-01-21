@@ -16,9 +16,9 @@ namespace ConsoleApp1
             Duck dec = new DecoyDuck();
             Duck rub = new RubberDuck();
 
-            List<Duck> ducks = new List<Duck> { mal, red, dec, rub };
+            Duck[] ducks = new Duck[]{ mal, red, dec, rub };
 
-            for (int i = 0; i < ducks.Count; i++)
+            for (int i = 0; i < ducks.Length; i++)
             {
                 Console.WriteLine(ducks[i].Swim());
                 Console.WriteLine(ducks[i].Display());
