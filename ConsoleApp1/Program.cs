@@ -20,10 +20,10 @@ namespace ConsoleApp1
 
             for (int i = 0; i < ducks.Length; i++)
             {
+                Console.WriteLine(ducks[i].Display()); 
                 Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Display());
                 Console.WriteLine(ducks[i].Fly());
-                Console.WriteLine(ducks[i].Quack());
+                Console.WriteLine(ducks[i].Quack()+"\n");
             }
 
             Console.ReadKey();
