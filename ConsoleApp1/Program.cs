@@ -22,14 +22,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(ducks[i].Swim());
                 Console.WriteLine(ducks[i].Display());
-                if (ducks[i] is IFlyable)
-                {
-                    Console.WriteLine((ducks[i] as IFlyable).Fly());
-                }
-                if (ducks[i] is IQuackable)
-                {
-                    Console.WriteLine((ducks[i] as IQuackable).Quack());
-                }
+                Console.WriteLine(ducks[i].Fly());
+                Console.WriteLine(ducks[i].Quack());
             }
 
             Console.ReadKey();
