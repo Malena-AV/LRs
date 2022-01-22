@@ -18,13 +18,23 @@ namespace Library
         {
             return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
-        public string Fly()
+        public string PerformFly()
         {
             return flyBehavior.Fly();
         }
-        public string Quack()
+        public string PerformQuack()
         {
             return quackBehavior.Quack();
+        }
+        public IFlyBehavior SetFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+            return flyBehavior;
+        }
+        public IQuackBehavior SetQuackBehavior(IQuackBehavior qb)
+        {
+            quackBehavior = qb;
+            return quackBehavior;
         }
     }
 }
