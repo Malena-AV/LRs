@@ -19,8 +19,8 @@ namespace ConsoleApp1
             IFlyBehavior flyBehavior = new FlyNoWay();
             IQuackBehavior quackBehavior = new DQuack();
 
-            mal.FlyBehavior(flyBehavior);
-            rub.QuackBehavior(quackBehavior);
+            mal.SetFlyBehavior(flyBehavior);
+            rub.SetQuackBehavior(quackBehavior);
 
             Duck[] ducks = new Duck[]{ mal, red, dec, rub };
 
