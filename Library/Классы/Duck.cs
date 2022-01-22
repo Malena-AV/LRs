@@ -26,12 +26,12 @@ namespace Library
         {
             return quackBehavior.Quack();
         }
-        public IFlyBehavior SetFlyBehavior(IFlyBehavior fb)
+        public IFlyBehavior FlyBehavior(IFlyBehavior fb)
         {
             flyBehavior = fb;
             return flyBehavior;
         }
-        public IQuackBehavior SetQuackBehavior(IQuackBehavior qb)
+        public IQuackBehavior QuackBehavior(IQuackBehavior qb)
         {
             quackBehavior = qb;
             return quackBehavior;
